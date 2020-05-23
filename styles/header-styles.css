@@ -13,7 +13,8 @@
       background-color: #5D191A;
       display: flex;
       align-items: center;
-      justify-content: space-between; }
+      justify-content: space-between;
+      max-height: 100%; }
       #headerbox #mainhead .NPimg {
         padding-right: 6%;
         flex-basis: 30%; }
@@ -21,7 +22,8 @@
         padding-left: 6%;
         flex-basis: 70%; }
     #headerbox #nav1 {
-      background-color: #1A1A1A; }
+      background-color: #1A1A1A;
+      max-height: 100%; }
       #headerbox #nav1 ul {
         display: flex;
         list-style-type: none;

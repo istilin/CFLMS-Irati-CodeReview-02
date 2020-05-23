@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
 * {
-  font-family: "Oswald", sans-serif; }
+  font-family: "Oswald", sans-serif;
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
 
 @media screen and (min-width: 480px) {
   #mainbox {
@@ -61,11 +65,14 @@
 
   .imgtext {
     background-color: #171717;
-    padding: 4% 2%; }
+    padding: 4% 2%;
+    max-height: 100%; }
     .imgtext a {
-      margin: 0;
-      color: white;
+      max-height: 100%;
       text-decoration: none; }
+      .imgtext a p {
+        color: white;
+        margin: 0; }
 
   .imgtextp1 {
     font-size: 1.8vw; }
@@ -96,9 +103,11 @@
   #advert {
     display: flex;
     padding: 0 4%; }
-    #advert img {
-      max-width: 100%;
-      min-width: 100%; }
+    #advert a {
+      width: 100%; }
+      #advert a img {
+        max-width: 100%;
+        min-width: 100%; }
 
   .imgclass1 {
     margin-bottom: -20%; }
@@ -133,7 +142,7 @@
 
   .greybox {
     background-color: #DDDDDD;
-    margin: 2% 0 0 0;
+    margin: 3% 0 3% 0;
     width: 100%; }
     .greybox p {
       color: #4C4C4C;
@@ -157,8 +166,7 @@
   .imgrow {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 2% 0 3%; }
+    flex-wrap: wrap; }
 
   .imgbox1 {
     width: 48.5%;
@@ -191,11 +199,13 @@
   .imgtext {
     background-color: #171717;
     padding: 2% 1%;
-    height: 35%; }
+    max-height: 100%; }
     .imgtext a {
-      margin: 0;
-      color: white;
+      max-height: 100%;
       text-decoration: none; }
+      .imgtext a p {
+        margin: 0;
+        color: white; }
 
   .imgtextp1 {
     font-size: 3vw; }
@@ -206,13 +216,14 @@
   #bannerimg {
     margin: 1% 0 2%;
     width: 48.5%;
-    display: flex; }
-    #bannerimg a {
-      overflow: hidden;
-      width: 100%; }
-      #bannerimg a img {
-        max-width: 100%;
-        min-width: 100%; }
+    overflow: hidden; }
+    #bannerimg #imgcrop2 {
+      display: inline-block;
+      width: 100%;
+      overflow: hidden; }
+      #bannerimg #imgcrop2 a img {
+        margin: -5% 0;
+        width: 100%; }
 
   .imgclass1 {
     margin-bottom: -20%; }
