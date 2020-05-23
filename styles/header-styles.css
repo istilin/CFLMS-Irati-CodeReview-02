@@ -1,4 +1,12 @@
-@media screen and (min-width: 480px) {
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+* {
+  font-family: "Oswald", sans-serif;
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+@media screen and (min-width: 1025px) {
   .mainheaditems, #headerbox #mainhead .NPimg, #headerbox #mainhead .FSWDCbox {
     padding: 2%;
     width: 0 auto; }
@@ -36,7 +44,7 @@
           #headerbox #nav1 ul li a {
             color: white;
             text-decoration: none; } }
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 480px) {
   #headerbox {
     display: flex;
     flex-direction: column; }
@@ -62,6 +70,39 @@
         justify-content: center; }
         #headerbox #nav1 ul li {
           padding: 0.5% 2%;
+          font-size: 5vw; }
+          #headerbox #nav1 ul li a {
+            color: white;
+            text-decoration: none; } }
+/* for tablets */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  #headerbox {
+    display: flex;
+    flex-direction: column; }
+    #headerbox #mainhead {
+      background-color: #5D191A;
+      display: flex;
+      align-items: center; }
+      #headerbox #mainhead .NPimg {
+        padding: 1% 0% 1% 6%;
+        width: 70%; }
+        #headerbox #mainhead .NPimg img {
+          min-width: 100%;
+          max-width: 100%; }
+      #headerbox #mainhead .FSWDCbox {
+        display: none; }
+    #headerbox #nav1 {
+      background-color: #1A1A1A;
+      display: flex;
+      justify-content: flex-end; }
+      #headerbox #nav1 ul {
+        display: flex;
+        list-style-type: none;
+        padding: 1%;
+        margin: 0;
+        justify-content: center; }
+        #headerbox #nav1 ul li {
+          padding: 0.5% 3%;
           font-size: 5vw; }
           #headerbox #nav1 ul li a {
             color: white;

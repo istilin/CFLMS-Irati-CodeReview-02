@@ -6,7 +6,7 @@
 body {
   margin: 0; }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1025px) {
   #mainbox {
     padding-left: 3.5%;
     padding-right: 3.5%;
@@ -131,7 +131,7 @@ body {
       margin: 0;
       padding-left: 1%;
       font-size: 2.5vw; } }
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 480px) {
   #mainbox {
     padding-left: 5%;
     display: flex;
@@ -239,5 +239,111 @@ body {
 
   .imgclass5 {
     margin-bottom: -16%; } }
+/* for tablets */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  #mainbox {
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    display: flex;
+    flex-direction: column; }
+
+  #date {
+    display: flex;
+    justify-content: center; }
+    #date p {
+      font-size: 1.5vw;
+      margin: 1% 0; }
+
+  #bannerimg, .aside1, .aside2 {
+    display: none; }
+
+  .picsbanner {
+    display: flex;
+    justify-content: space-between; }
+
+  .imgs1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%; }
+
+  .imgrow {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0 3%; }
+
+  .imgbox1 {
+    width: 31.5%;
+    display: flex;
+    flex-direction: column; }
+
+  .imgbox2 {
+    width: 47.5%;
+    display: flex;
+    flex-direction: column; }
+
+  .imgbox2_1 {
+    width: 47.5%;
+    display: flex;
+    flex-direction: column; }
+
+  .imgbox2_2 {
+    display: none; }
+
+  .imgcrop {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden; }
+    .imgcrop img {
+      width: 100%; }
+
+  .imgtext {
+    background-color: #171717;
+    padding: 4% 2%;
+    max-height: 100%; }
+    .imgtext a {
+      max-height: 100%;
+      text-decoration: none; }
+      .imgtext a p {
+        color: white;
+        margin: 0; }
+
+  .imgtextp1 {
+    font-size: 2.1vw; }
+
+  .imgtextp2 {
+    font-size: 3.1vw; }
+
+  #advert {
+    display: flex;
+    padding: 0 4%; }
+    #advert a {
+      width: 100%; }
+      #advert a img {
+        max-width: 100%;
+        min-width: 100%; }
+
+  .imgclass1 {
+    margin-bottom: -20%; }
+
+  .imgclass2 {
+    margin: -5% 0 -15% 0; }
+
+  .imgclass3 {
+    margin-bottom: -10%; }
+
+  .imgclass4 {
+    margin: -5% 0 -16% 0; }
+
+  .imgclass5 {
+    margin-bottom: -16%; }
+
+  .greybox {
+    background-color: #DDDDDD; }
+    .greybox p {
+      color: #4C4C4C;
+      margin: 0;
+      padding-left: 1%;
+      font-size: 2.5vw; } }
 
 /*# sourceMappingURL=index-styles.css.map */
