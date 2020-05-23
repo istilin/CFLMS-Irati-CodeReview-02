@@ -1,0 +1,15 @@
+main {
+  padding: 10%;
+  margin: 1%;
+  display: flex;
+  flex-direction: column; }
+  main h1 {
+    font-size: 5vw;
+    color: #E94342;
+    text-align: center; }
+  main p {
+    font-size: 3vw;
+    color: #444444;
+    text-align: justify; }
+
+/*# sourceMappingURL=article-styles.css.map */
