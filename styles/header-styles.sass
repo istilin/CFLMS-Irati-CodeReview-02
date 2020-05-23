@@ -1,44 +1,81 @@
-.mainheaditems
-	padding: 2%
-	width: 0 auto
-	img
-		min-width: 100%
-		max-width: 100%
+@media screen and (min-width: 480px)
 
-#headerbox
-	display: flex
-	flex-direction: column
-	
-	#mainhead
-		background-color:  #5D191A
+	.mainheaditems
+		padding: 2%
+		width: 0 auto
+		img
+			min-width: 100%
+			max-width: 100%
+
+	#headerbox
 		display: flex
-		align-items: center
-		justify-content: space-between
+		flex-direction: column
+	
+		#mainhead
+			background-color:  #5D191A
+			display: flex
+			align-items: center
+			justify-content: space-between
 
-		.NPimg
-			@extend .mainheaditems
-			padding-right: 6%
-			flex-basis: 30%
+			.NPimg
+				@extend .mainheaditems
+				padding-right: 6%
+				flex-basis: 30%
 	
 			
-		.FSWDCbox
-			@extend .mainheaditems
-			padding-left: 6%
-			flex-basis: 70%
+			.FSWDCbox
+				@extend .mainheaditems
+				padding-left: 6%
+				flex-basis: 70%
 			
 			
 		
-	#nav1
-		background-color: #1A1A1A
-		ul 
+		#nav1
+			background-color: #1A1A1A
+			ul 
+				display: flex
+				list-style-type: none
+				padding-left: 1.3%
+				margin: 0
+				li
+					padding: 0.5%
+					padding-left: 1.8%
+					font-size: 2.5vw
+					a 
+						color: white
+						text-decoration: none
+
+@media screen and (max-width: 481px)
+	#headerbox
+		display: flex
+		flex-direction: column
+
+		#mainhead
+			background-color:  #5D191A
 			display: flex
-			list-style-type: none
-			padding-left: 1.3%
-			margin: 0
-			li
-				padding: 0.5%
-				padding-left: 1.8%
-				font-size: 2.5vw
-				a 
-					color: white
-					text-decoration: none
+			align-items: center
+			.NPimg
+				padding: 1% 0% 1% 6%
+				width: 55%
+				img
+					min-width: 100%
+					max-width: 100%
+
+			.FSWDCbox
+				display: none
+
+		#nav1
+			background-color: #1A1A1A
+			ul 
+				display: flex
+				list-style-type: none
+				padding: 1%
+				margin: 0
+				justify-content: center
+				li
+
+					padding: 0.5% 2%
+					font-size: 5vw
+					a 
+						color: white
+						text-decoration: none
